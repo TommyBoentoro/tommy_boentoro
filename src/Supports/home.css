@@ -1,0 +1,61 @@
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.navbar{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.hello{
+    margin-top: 106px;
+    color: var(--white);
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.full-stack{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    margin-top: 49px;
+}
+
+.garisPertama{
+    width: 100%;
+    height: 5px;
+    background-color: var(--green);
+    margin-top: 5px;
+}
+
+.textTahun{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    margin-top: 146px;
+}
+
+.garisKedua{
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    background-color: var(--green);
+}
+
+.web{
+    color: var(--white);
+    font-weight: 900;
+    font-size: 72px;
+    margin-top: 105px;
+}
+
+.gambarHome{
+    width: 100%;
+    height: 328px;
+    object-fit: cover;
+    margin-top: 43px;
+}
