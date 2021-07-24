@@ -1,33 +1,10 @@
+
+/* bg Head */
+
 .bg{
     width: 100%;
-    height: 1400px;
+    height: 100vh;
     background-color: var(--black);
-}
-
-.navbar{
-    color: var(--white);
-    font-size: 18px;
-    font-weight: 700;
-    padding-top: 30px;
-}
-
-.navTommy{
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.navTommy:hover{
-    color: var(--green);
-}
-
-.navAbout{
-    cursor: pointer;
-    transition: all .5s;
-    padding-right: 1px;
-}
-
-.navAbout:hover{
-    transform: translateX(-10px);
 }
 
 .hello{
@@ -39,9 +16,8 @@
 
 .full-stack{
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white);
-    margin-top: 59px;
 }
 
 .garisPertama{
@@ -53,7 +29,7 @@
 
 .textTahun{
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white);
     margin-top: 136px;
 }
@@ -73,16 +49,31 @@
 }
 
 .gambarHome{
-    width: 100%;
     height: 328px;
     object-fit: cover;
 }
+
+.overlayHome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    width: 100%;
+    opacity: 0.5;
+    transition: ease .5s;
+    height: 100%;
+}
+
+/* .overlayHome:hover {
+    opacity: 0.1;
+    cursor: pointer;
+} */
 
 .indonesian{
     font-size: 36px;
     color: var(--green);
     font-weight: 900;
-    margin-top: 43px;
+    margin-top: 93px;
     letter-spacing: 0.155cm;
     line-height: 53.82px;
 }
@@ -115,3 +106,72 @@
     font-weight: 300;
     color: var(--white);
 }
+
+/* Home Body */
+.bgBody{
+    background-color: var(--white);
+    height: 1662px;
+    width: 100%;
+}
+
+.textCardHeading{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.textCardBody{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-top: 5px;
+}
+
+.textViewProject{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--grey);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease .7s;
+}
+
+.textViewProject:hover{
+    color: black
+}
+
+.cardImg-2{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.cardImg-2:hover{
+    transform: translateY(-7px);
+}
+
+
+.cardImg-1{
+    width: 100%;
+    object-fit: cover;
+    height: 420px;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.cardImg-1:hover{
+    transform: translateY(-7px);
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-color:var(--black)
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+}
+

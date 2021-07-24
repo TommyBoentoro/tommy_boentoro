@@ -1,0 +1,40 @@
+.bgAbout{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.textWhite{
+    color: var(--white);
+}
+
+.headerAbout1{
+    margin-top: 200px;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.garisAbout1{
+    width: 25%;
+    height: 5px;
+    background-color: var(--green);
+    margin-top: -10px;
+}
+
+.headerAbout2{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.garisAbout2{
+    width: 15%;
+    height: 5px;
+    background-color: var(--green);
+}
+
+.bodyAbout{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+}

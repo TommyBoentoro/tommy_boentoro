@@ -1,0 +1,51 @@
+.bgJati{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.headerJati{
+    margin-top: 135px;
+    width: 100%;
+}
+
+.imageJumbotron{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fontHeader1{
+    margin-top: 40px;
+    font-size: 28px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.fontHeader2{
+    font-size: 36;
+    font-weight: 900;
+}
+
+.fontHeaderBody{
+    margin-top: 5px;
+    font-size: 24px;
+    color: var(--green);
+    font-weight: 300;
+}
+
+.garisProjectHeader{
+    width: 50%;
+    height: 5px;
+    background-color: var(--green);
+    margin-top: 15px;
+    margin-right: 200px;
+}
+
+/* Body */
+.bgJatiBody{
+    width: 100%;
+    background-color: var(--white);
+    height: 100vh;
+}
