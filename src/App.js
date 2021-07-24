@@ -20,7 +20,7 @@ class App extends React.Component{
         <Route path="/about" component={About}/>
         <Route path="/jati" component={Jati}/>
       </Switch>
-      {/* <Footer/> */}
+      <Footer/>
      </BrowserRouter>
     )
   }
