@@ -135,10 +135,12 @@
     margin-top: 10px;
     cursor: pointer;
     transition: ease .7s;
+    text-decoration: none;
 }
 
 .textViewProject:hover{
-    color: black
+    color: black;
+    text-decoration: none;
 }
 
 .cardImg-2{

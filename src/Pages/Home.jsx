@@ -9,6 +9,7 @@ import gambarCard2 from "./../assets/Home/gambarCard2.png"
 import gambarCard3 from "./../assets/Home/gambarCard3.png"
 import gambarCard4 from "./../assets/Home/gambarCard4.png"
 import cardTest from "./../assets/Home/cardTest.jpg"
+import JatiJumbotron from "./../assets/Jati/JatiJumbotron.png"
 
 // import Function
 import Scroll from "../helpers/smoothScroll"
@@ -135,9 +136,11 @@ function Home(){
                             </div>
                             <div className="col d-flex flex-column align-items-end">
                                 <div className="px-0" style={{width:"85%"}}>
-                                    <img src={gambarCard3} alt="" className="cardImg-2" />
+                                    <a href="/jati">
+                                        <img src={JatiJumbotron} alt="" className="cardImg-2" />
+                                    </a>
                                     <div className="textCardHeading fontPlay">
-                                        Furniture
+                                        Jati
                                     </div>
                                     <div className="textCardBody fontKanit col-9 px-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in 
@@ -145,7 +148,7 @@ function Home(){
                                     </div>
                                     <div className="d-flex justify-content-end">
                                         <div className="textViewProject fontKanit">
-                                            View Project.
+                                            <a className="textViewProject fontKanit" href="/jati">View Project.</a>
                                         </div>
                                     </div>
                                 </div>

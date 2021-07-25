@@ -47,5 +47,34 @@
 .bgJatiBody{
     width: 100%;
     background-color: var(--white);
-    height: 100vh;
+    height: 2200px;
+    
 }
+
+.body1{
+    margin-top: 77px;
+}
+
+.textHeaderProject{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--black);
+    font-weight: 900;
+}
+
+.textBodyProject{
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.body2{
+    margin-top: 53px;
+}
+
+.body3{
+    margin-top: 84px;
+}
+
