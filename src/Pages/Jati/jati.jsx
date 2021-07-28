@@ -1,20 +1,43 @@
+import React,{useRef, useEffect} from "react"
+import gsap,{Power3} from "gsap"
 import "./../Jati/jati.css"
+import CSSRulePlugin from "gsap/CSSRulePlugin"
 
 // Import Images
+import JatiTest from "./../../assets/Jati/testing.jpg"
 import JatiJumbotron from "./../../assets/Jati/JatiJumbotron.png"
 import Jati1 from "./../../assets/Jati/Jati1.png"
 import Jati2 from "./../../assets/Jati/Jati2.png"
 import Jati3 from "./../../assets/Jati/Jati3.png"
 
 function Jati(){
+
+    let imageJati = useRef(null)
+    let imageJatiInner = useRef(null)
+    let initialJati = useRef(null)
+
+    let tl = gsap.timeline({delay:".8"})
+    let imageJatiReveal = CSSRulePlugin.getRule(`.image-outer:after`)
+
+    useEffect (() => {
+        gsap.to(initialJati, {duration:0, css:{visibility:"visible"}})
+        // IMAGE
+        tl.to(imageJatiReveal, {duration:1.4, width:"0%", ease:Power3.easeOut})
+        .from(imageJatiInner, {duration:1.4, scale:1.6, ease:Power3.easeOut, delay:"-1.4"})
+        
+    })
+
     return(
         <>
+        <div ref={el => initialJati = el} className="initialJati">
             <div className="bgJati">
                 <div className="container-fluid px-5">
                     <div className="d-flex">
                         <div className="headerJati d-flex px-0">
-                            <div className="col-9 px-0" style={{height:"650px"}}>
-                                <img src={JatiJumbotron} alt="" className="imageJumbotron" />
+                            <div ref={el => imageJati = el} className="col-9 px-0">
+                                <div className="image-outer" style={{overflow:"hidden"}}>
+                                    <img ref={ el => imageJatiInner = el} src={JatiTest} alt="" className="imageJumbotron" />
+                                </div>
                             </div>
                             <div className="col-3 px-5">
                                 <div className="fontHeader1 fontKanit">
@@ -132,6 +155,7 @@ function Jati(){
                     </div>
                 </div>
             </div>
+        </div>
         </>
         
     )
