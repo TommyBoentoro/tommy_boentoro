@@ -2,6 +2,10 @@
     visibility: hidden
 }
 
+.scrollSmooth{
+    scroll-behavior: smooth;
+}
+
 
 /* bg Head */
 
@@ -174,10 +178,19 @@
 
 ::-webkit-scrollbar{
     width: 6px;
-    background-color:var(--black)
+    border-radius: 5px;
+    background-color: var(--black);
+
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0, 0.25);
 }
 
 ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
     background-color: var(--green);
+    transform: scaleY(0.5);
 }
 

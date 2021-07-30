@@ -51,7 +51,7 @@ function About(){
     return(
         <>
             <div ref={el => {initial = el}} className="initial bgAbout textWhite">
-                <div className="container d-flex" style={{overflow:"hidden"}}>
+                <div className="container-fluid d-flex" style={{overflow:"hidden"}}>
                     <div ref={el => content = el} className="col">
                         <div className="d-flex flex-column px-5 py-0" style={{overflow:"hidden"}}>
                                 <div className="headerAbout1 fontPlay py-0">

@@ -13,7 +13,7 @@ import cardTest from "./../assets/Home/cardTest.jpg"
 import JatiJumbotron from "./../assets/Jati/JatiJumbotron.png"
 
 // import Function
-import Scroll from "../helpers/smoothScroll"
+import SmoothScroll from "smooth-scroll"
 
 function Home(){
     let tl = gsap.timeline({delay:0.4})
@@ -28,13 +28,14 @@ function Home(){
     let sixthLine = useRef(null)
     let seventhLine = useRef(null)
 
-
     useEffect(() => {
+        
+
         gsap.to(initiateHome, {duration:0, css:{visibility:"visible"}})
 
         tl.from(hello, {duration:0.5,opacity:0, x:-400, ease:Power3.easeOut })
-        .from(firstLine, {duration:0.5, opacity:0, x:400, ease:Power3.easeOut}, .25)
-        .from(secondLine, {duration:0.5, opacity:0, x:-400, ease:Power3.easeOut}, .6)
+        .from(firstLine, {duration:0.5, opacity:0, x:400, ease:Power3.easeOut}, .2)
+        .from(secondLine, {duration:0.5, opacity:0, x:-400, ease:Power3.easeOut}, .4)
         .from(thirdLine, {duration:1.2, y:40, ease:Power3.easeOut},1.4)
         .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.3)
         .from(fifthLine, {duration:1.2, y:40, ease:Power3.easeOut},2.1)
@@ -43,7 +44,7 @@ function Home(){
     })
 
     return(
-        <div ref={el => initiateHome = el} className="HomeAwal" id="scroll">
+        <div ref={el => initiateHome = el} className="HomeAwal scrollSmooth">
             {/* Home Head and Navbar */}
             <div className="bg">
                 <div className="container-fluid px-5" style={{overflow:"hidden"}}>
@@ -90,7 +91,7 @@ function Home(){
                     <div  className="fontKanit">
                         <div className="indonesian d-flex justify-content-center" style={{overflow:"hidden"}}>
                             <div ref={el => thirdLine = el}>
-                                Indonesia
+                                Indonesian
                             </div>
                         </div>
                         <div className="d-flex justify-content-center indonesian2 fontPlay" style={{overflow:"hidden"}}>

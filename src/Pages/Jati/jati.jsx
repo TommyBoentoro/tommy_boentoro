@@ -1,5 +1,6 @@
 import React,{useRef, useEffect} from "react"
 import gsap,{Power3} from "gsap"
+import {useIntersection} from "react-use"
 import "./../Jati/jati.css"
 import CSSRulePlugin from "gsap/CSSRulePlugin"
 
@@ -15,6 +16,9 @@ function Jati(){
     let imageJati = useRef(null)
     let imageJatiInner = useRef(null)
     let initialJati = useRef(null)
+    let jatiText = useRef(null)
+    let jatiProject = useRef(null)
+    let jatiDeveloper = useRef(null)
 
     let tl = gsap.timeline({delay:".8"})
     let imageJatiReveal = CSSRulePlugin.getRule(`.image-outer:after`)
@@ -24,65 +28,87 @@ function Jati(){
         // IMAGE
         tl.to(imageJatiReveal, {duration:1.4, width:"0%", ease:Power3.easeOut})
         .from(imageJatiInner, {duration:1.4, scale:1.6, ease:Power3.easeOut, delay:"-1.4"})
+        .from(jatiText, {duration:1.4, y:55, ease:Power3.easeOut})
+        .from(jatiProject, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1"})
+        .from(jatiDeveloper, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1.4"})
         
     })
+
+    // INTERSECTION
+
+    const sectionRef = useRef(null);
+
+    const intersection = useIntersection(sectionRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.8
+    });
+
+    const fadeIn = (sectionRef) => {
+        gsap.to(sectionRef, {
+            duration: 1,
+            opacity: 1,
+            y: -60,
+            ease: "Power4.out",
+            stagger: {
+                amount: .3
+            }
+        })
+    }
+
+    const fadeOut = (sectionRef) => {
+        gsap.to(sectionRef, {
+            duration: 0,
+            opacity: 1,
+            y: -20,
+            ease: "Power4.out",
+        })
+    }
+
+
+    intersection && intersection.intersectionRatio < 0.8 ?
+    fadeOut (".bgJatiBody")
+    : fadeIn(".bgJatiBody")
 
     return(
         <>
         <div ref={el => initialJati = el} className="initialJati">
             <div className="bgJati">
-                <div className="container-fluid px-5">
-                    <div className="d-flex">
-                        <div className="headerJati d-flex px-0">
-                            <div ref={el => imageJati = el} className="col-9 px-0">
-                                <div className="image-outer" style={{overflow:"hidden"}}>
-                                    <img ref={ el => imageJatiInner = el} src={JatiTest} alt="" className="imageJumbotron" />
-                                </div>
+                <div className="d-flex">
+                    <div className="headerJati d-flex px-0">
+                        <div ref={el => imageJati = el} className="col-12 px-0">
+                            <div className="image-outer" style={{overflow:"hidden"}}>
+                                <img ref={ el => imageJatiInner = el} src={JatiTest} alt="" className="imageJumbotron" />
                             </div>
-                            <div className="col-3 px-5">
-                                <div className="fontHeader1 fontKanit">
-                                    Jati Furniture
-                                </div>
-                                <div style={{marginTop:"80px"}}>
-                                    <div className="fontHeader2 fontPlay">
-                                        Role
-                                    </div>
-                                    <div className="fontHeaderBody fontKanit">
-                                        UI Designer
-                                    </div>
-                                    <div className="fontHeaderBody fontKanit">
-                                        Developer
-                                    </div>
-                                </div>
-
-                                <div style={{marginTop:"40px"}}>
-                                    <div className="fontHeader2 fontPlay">
-                                        Type
-                                    </div>
-                                    <div  className="fontHeaderBody fontKanit">
-                                        Personal Project
-                                    </div>
-                                </div>
-
-                                <div style={{marginTop:"80px"}}>
-                                    <div className="fontHeaderBody fontKanit" style={{color:"white"}}>Link Webstie</div>
-                                    <a href="">Link</a>
-                                </div>
+                            <div className="overlay-black">
+                                
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-end">
-                        <div className="garisProjectHeader">
+                </div>
+                <div className="container" style={{marginTop:"20px"}}>
+                    <div>
+                        <div className = "fontPlay fontHeader1" style={{overflow:"hidden"}}>
+                            <div ref={el => jatiText = el}>
+                                Jati Furniture
+                            </div>
                         </div>
-                    </div>
-                    <div className="fontHeader2 d-flex justify-content-center fontPlay" style={{marginTop:"85px"}}>
-                        See More !
+                        <div className = "fontKanit fontHeader2" style={{overflow:"hidden"}}>
+                            <div ref={el => jatiProject = el}>
+                                Personal project - On going
+                            </div>
+                        </div>
+                        <div className = "fontKanit fontHeader3" style={{overflow:"hidden"}}>
+                            <div ref={el => jatiDeveloper = el}>
+                                Front-end Developer
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* Body */}
-            <div className="bgJatiBody">
+            <div className="bgJatiBody" style={{overflow:"hidden"}}>
                 <div className="container">
                     <div className="d-flex">
                         <div className="body1 px-0">
@@ -90,12 +116,12 @@ function Jati(){
                                 Jati
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nam ultrices elementum lacus nec suscipit. Vestibulum nisl ante, auctor quis 
-                                rhoncus non, aliquet ut diam. Fusce efficitur est id euismod luctus. 
-                                Proin lacinia dolor a leo lacinia commodo et et enim. Nam interdum faucibus leo ut imperdiet. 
-                                Proin augue orci, ornare vitae ligula in, facilisis vehicula dui. 
-                                Mauris eu facilisis mi, quis luctus metus.
+                                Jati is a furniture online shop type of project such as IKEA or fabelio.
+                                Unfortunately i made Jati with front-end only so i used a fake-server as the back-end
+                                I made this project to learn more about MERN and how to applied it in online bussiness model.
+                                I am not really focusing on the design appeareances but the flow of online business model itself.
+
+                                
                             </div>
                         </div>
                     </div>
@@ -112,15 +138,13 @@ function Jati(){
                         </div>
                         <div className="body3 px-0 col">
                             <div className="textHeaderProject">
-                                Meaning of Jati
+                                Flow & Features
                             </div>
                             <div className="textBodyProject px-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nam ultrices elementum lacus nec suscipit. Vestibulum nisl ante, auctor quis 
-                                rhoncus non, aliquet ut diam. Fusce efficitur est id euismod luctus. 
-                                Proin lacinia dolor a leo lacinia commodo et et enim. Nam interdum faucibus leo ut imperdiet. 
-                                Proin augue orci, ornare vitae ligula in, facilisis vehicula dui. 
-                                Mauris eu facilisis mi, quis luctus metus.
+                                Jati contains quite lot of pages because normally e-commerce required a long flow
+                                from the user to login until checking out the product.It contains register/login page,
+                                home page, product page, detail product page, check-out page. Whilst the features has a basic
+                                e-commerce features such as search by product/category, add-to-cart, forgot password and so on.
                             </div>
                         </div>
                     </div>
@@ -134,15 +158,16 @@ function Jati(){
                     <div className="d-flex">
                         <div className="body3 px-0 col">
                             <div className="textHeaderProject">
-                                Framework & Tools
+                                Tools
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nam ultrices elementum lacus nec suscipit. Vestibulum nisl ante, auctor quis 
-                                rhoncus non, aliquet ut diam. Fusce efficitur est id euismod luctus. 
-                                Proin lacinia dolor a leo lacinia commodo et et enim. Nam interdum faucibus leo ut imperdiet. 
-                                Proin augue orci, ornare vitae ligula in, facilisis vehicula dui. 
-                                Mauris eu facilisis mi, quis luctus metus.
+                                I used HTML, CSS, bootstrap, and of course reactJS library to made Jati.For handle the
+                                back-end I use JSON server and create the fake-server.I used a library called validator just to 
+                                help me making a validation in register and login page more easier. 
+                                Using JSON web token "SHA256" to secure user's informations
+                                and also local storage to send and map the data.
+                                Last but not least, I also use redux becauseredux allows me to manage Jati's state in a single place. 
+                                moreover, it also predictable and traceable.
                             </div>
                         </div>
                     </div>
