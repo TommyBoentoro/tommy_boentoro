@@ -133,7 +133,7 @@
     font-size: 18px;
     font-weight: 300;
     color: var(--grey);
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .textViewProject{
@@ -155,7 +155,8 @@
     width: 100%;
     object-fit: cover;
     height: 300px;
-    transition: ease .5s;
+    transition-delay: .2s;
+    transition-duration: .5s;
     cursor: pointer;
 }
 
@@ -168,7 +169,8 @@
     width: 100%;
     object-fit: cover;
     height: 420px;
-    transition: ease .5s;
+    transition-delay: .2s;
+    transition-duration: .5s;
     cursor: pointer;
 }
 

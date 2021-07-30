@@ -7,10 +7,15 @@ import CSSRulePlugin from "gsap/CSSRulePlugin"
 // Import Images
 import JatiTest from "./../../assets/Jati/testing.jpg"
 import JatiHome from "./../../assets/Jati/Home.png"
+import JoshuaHome from "./../../assets/Joshua/JoshuaHome.JPG"
+import JoshuaContact from "./../../assets/Joshua/contact.png"
+import JoshuaProject from "./../../assets/Joshua/home.png"
+import JoshuaProject2 from "./../../assets/Joshua/home2.png"
+import JoshuaProject3 from "./../../assets/Joshua/home3.png"
 import JatiPayment from "./../../assets/Jati/Payment.png"
 import JatiLogin from "./../../assets/Jati/Login.png"
 
-function Jati(){
+function Joshua(){
 
     let imageJati = useRef(null)
     let imageJatiInner = useRef(null)
@@ -77,7 +82,7 @@ function Jati(){
                     <div className="headerJati d-flex px-0">
                         <div ref={el => imageJati = el} className="col-12 px-0">
                             <div className="image-outer" style={{overflow:"hidden"}}> 
-                                <img ref={ el => imageJatiInner = el} src={JatiTest} alt="" className="imageJumbotron" />
+                                <img ref={ el => imageJatiInner = el} src={JoshuaHome} alt="" className="imageJumbotron" />
                             </div>
                             <div className="overlay-black">
                                 
@@ -89,17 +94,17 @@ function Jati(){
                     <div>
                         <div className = "fontPlay fontHeader1" style={{overflow:"hidden"}}>
                             <div ref={el => jatiText = el}>
-                                Jati 
+                                Joshua + partners
                             </div>
                         </div>
                         <div className = "fontKanit fontHeader2" style={{overflow:"hidden"}}>
                             <div ref={el => jatiProject = el}>
-                                Personal project - On going
+                                Commercial project - Deploying
                             </div>
                         </div>
                         <div className = "fontKanit fontHeader3" style={{overflow:"hidden"}}>
                             <div ref={el => jatiDeveloper = el}>
-                                Front-end Developer
+                                Full-stack Developer
                             </div>
                         </div>
                     </div>
@@ -112,21 +117,18 @@ function Jati(){
                     <div className="d-flex">
                         <div className="body1 px-0">
                             <div className="textHeaderProject">
-                                Jati
+                                Joshua Aditama + partners
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                Jati is a furniture online shop type of project such as IKEA or fabelio.
-                                Unfortunately i made Jati with front-end only so i used a fake-server as the back-end
-                                I made this project to learn more about MERN and how to applied it in online bussiness model.
-                                I am not really focusing on the design appeareances but the flow of online business model itself.
-
-                                
+                                Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. They create a connection 
+                                between art and human to experience interior and architectural spaces. From commercial to personal spaces drive their to explore 
+                                the specialty of each projects as works of art.
                             </div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-center">
                         <div className="bodyImage1">
-                            <img src={JatiHome} alt="" className="imageProject" />
+                            <img src={JoshuaHome} alt="" className="imageProject" />
                         </div>
                     </div>
                     <div className="d-flex">
@@ -138,16 +140,18 @@ function Jati(){
                                 Flow & Features
                             </div>
                             <div className="textBodyProject px-0">
-                                Jati contains quite lot of pages because normally e-commerce required a long flow
-                                from the user to login until checking out the product.It contains register/login page,
-                                home page, product page, detail product page, check-out page. Whilst the features has a basic
-                                e-commerce features such as search by product/category, add-to-cart, forgot password and so on.
+                                Joshua's required 5 pages consist home, project, project detail, studio, contact and not to mention 
+                                admin page. The features consist of nodemailer, JSON web token, post, edit and delete. It's quite tricky while making this website
+                                is a lot of customization in hover and slider effect. 
+                                
                             </div>
                         </div>
                     </div>
                     <div className="d-flex px-0">
-                        <div className="bodyImage2">
-                            <img src={JatiPayment} alt="" className="imageProject" />
+                        <div className="bodyImage2 d-flex">
+                            <img src={JoshuaProject} alt="" className="imageProject" style={{objectFit:"scale-down"}} />
+                            <img src={JoshuaProject2} alt="" className="imageProject mx-4" style={{objectFit:"scale-down"}} />
+                            <img src={JoshuaProject3} alt="" className="imageProject" style={{objectFit:"scale-down"}} />
                         </div>
                     </div>
                     <div className="d-flex">
@@ -156,19 +160,18 @@ function Jati(){
                                 Tools
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                I used HTML, CSS, bootstrap, and of course reactJS library to make Jati. For handle the
-                                back-end I used JSON server and create a fake-server. I used a library called validator just to 
-                                help me making a validation in register and login page more easier. 
-                                Using JSON web token "SHA256" to secure user's informations
-                                and also local storage to send and map the data.
-                                Last but not least, I am using redux because redux allows me to manage Jati's state in a single place. 
-                                moreover, it also predictable and traceable.
+                                I used reactJS, html, css, bootstrap to make Joshua's website. There are some 
+                                library that i used in order to create the front-end such as react-slick, react-strap
+                                and react-icon. While in the
+                                back-end I am using MySQL as a database, nodeJS, express and also 
+                                JSON web token "SHA256" to secure user's informations.
+                                Also use redux to passing the data from back to front and vice versa.
                             </div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-end">
                         <div className="bodyImage3">
-                           <img src={JatiLogin} alt="" className="imageProject2" />
+                           <img src={JoshuaContact} alt="" className="imageProject2" />
                         </div>
                     </div>
                 </div>
@@ -179,4 +182,4 @@ function Jati(){
     )
 }
 
-export default Jati
+export default Joshua

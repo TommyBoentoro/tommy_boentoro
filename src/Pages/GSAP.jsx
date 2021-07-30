@@ -1,5 +1,4 @@
 import React, {useRef, useEffect, useState} from "react"
-import Gambar1 from "./../assets/Jati/Jati1.png"
 import "./../Supports/gsap.css"
 
 import {TweenMax, Power3} from "gsap"

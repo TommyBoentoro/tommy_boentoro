@@ -11,7 +11,7 @@ import About from "./Pages/About"
 import Jati from "./Pages/Jati/jati"
 import Gsap from "./Pages/GSAP"
 import Gsap2 from "./Pages/GSAP/gsap2"
-
+import Joshua from "./Pages/Joshua + partners/joshua"
 import About2 from "./Pages/About2"
 
 class App extends React.Component{
@@ -23,6 +23,7 @@ class App extends React.Component{
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/jati" component={Jati}/>
+        <Route path="/joshua" component={Joshua}/>
 
           {/* Test */}
         <Route path="/gsap" component={Gsap}/>

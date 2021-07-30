@@ -4,13 +4,11 @@ import "./../Supports/home.css"
 import gsap,{Power3} from "gsap"
 
 // Images
-import gambarHome from "./../assets/Home/gambarHome.png"
-import gambarCard1 from "./../assets/Home/gambarCard1.png"
-import gambarCard2 from "./../assets/Home/gambarCard2.png"
-import gambarCard3 from "./../assets/Home/gambarCard3.png"
-import gambarCard4 from "./../assets/Home/gambarCard4.png"
-import cardTest from "./../assets/Home/cardTest.jpg"
-import JatiJumbotron from "./../assets/Jati/JatiJumbotron.png"
+import JatiHome from "./../assets/Jati/testing.jpg"
+import JoshuaHome from "./../assets/Joshua/JoshuaHome.JPG"
+import TommyHome from "./../assets/Tommy web/TommyHome.png"
+
+
 
 // import Function
 import SmoothScroll from "smooth-scroll"
@@ -146,44 +144,15 @@ function Home(){
                     <div className="d-flex col-12 px-0" style={{marginTop:"130px"}}>
                         <div className="col px-0">
                             <div className="col-10 px-0" style={{marginTop:"130px"}}>
-                                <img src={gambarCard1} alt="" className="cardImg-1" />
-                                <div className="textCardHeading fontPlay">
-                                    Medium
-                                </div>
-                                <div className="textCardBody fontKanit col-10 px-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in 
-                                    ligula eget placerat. 
-                                </div>
-                                <div className="textViewProject fontKanit">
-                                    View Project.
-                                </div>
-                            </div>
-
-                            <div className="col-10 px-0" style={{marginTop:"100px"}}>
-                                <img src={gambarCard2} alt="" className="cardImg-1"/>
-                                <div className="textCardHeading fontPlay">
-                                    Medium
-                                </div>
-                                <div className="textCardBody fontKanit col-10 px-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in 
-                                    ligula eget placerat. 
-                                </div>
-                                <div className="textViewProject fontKanit">
-                                    View Project.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col d-flex flex-column align-items-end">
-                            <div className="px-0" style={{width:"85%"}}>
                                 <a href="/jati">
-                                    <img src={JatiJumbotron} alt="" className="cardImg-2" />
+                                    <img src={JatiHome} alt="" className="cardImg-1" />
                                 </a>
                                 <div className="textCardHeading fontPlay">
                                     Jati
                                 </div>
-                                <div className="textCardBody fontKanit col-9 px-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in 
-                                    ligula eget placerat. 
+                                <div className="textCardBody fontKanit col-11 px-0">
+                                    Non-commercial personal project with furniture ecommerce theme.
+                                    Using features such as JWT, add-to-cart, etc.
                                 </div>
                                 <div className="d-flex justify-content-end">
                                     <div className="textViewProject fontKanit">
@@ -191,14 +160,47 @@ function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div  style={{marginTop:"100px", width:"85%"}}>
-                                <img src={gambarCard4} alt="" className="cardImg-2"/>
+
+                            <div className="col-10 px-0" style={{marginTop:"100px"}}>
+                                <img src={TommyHome} alt="" className="cardImg-1"/>
                                 <div className="textCardHeading fontPlay">
-                                    Furniture
+                                   Tommy Boentoro's
                                 </div>
-                                <div className="textCardBody fontKanit col-9 px-0">
+                                <div className="textCardBody fontKanit col-11 px-0">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in 
                                     ligula eget placerat. 
+                                </div>
+                                <div className="d-flex justify-content-end">
+                                    <div className="textViewProject fontKanit">
+                                        View Project.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col d-flex flex-column align-items-end">
+                            <div className="px-0" style={{width:"85%"}}>
+                                <a href="/joshua">
+                                    <img src={JoshuaHome} alt="" className="cardImg-2" />
+                                </a>
+                                <div className="textCardHeading fontPlay">
+                                    Joshua + partners 
+                                </div>
+                                <div className="textCardBody fontKanit col-10 px-0">
+                                    Profesional website portofolio that engaged in interior design and architecture
+                                </div>
+                                <div className="d-flex justify-content-end">
+                                    <div className="textViewProject fontKanit">
+                                        <a className="textViewProject fontKanit" href="/joshua">View Project.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  style={{marginTop:"100px", width:"85%"}}>
+                                <img src={JatiHome} alt="" className="cardImg-2"/>
+                                <div className="textCardHeading fontPlay">
+                                    To-do-list 
+                                </div>
+                                <div className="textCardBody fontKanit col-11 px-0">
+                                    My very first project with full front and back-end. Very simple yet nostalgic.
                                 </div>
                                 <div className="d-flex justify-content-end">
                                     <div className="textViewProject fontKanit">
