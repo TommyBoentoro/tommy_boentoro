@@ -5,13 +5,16 @@ import "./../Jati/jati.css"
 import CSSRulePlugin from "gsap/CSSRulePlugin"
 
 // Import Images
-import JoshuaHome from "./../../assets/Joshua/JoshuaHome.JPG"
-import JoshuaContact from "./../../assets/Joshua/contact.png"
-import JoshuaProject from "./../../assets/Joshua/home.png"
-import JoshuaProject2 from "./../../assets/Joshua/home2.png"
-import JoshuaProject3 from "./../../assets/Joshua/home3.png"
 
-function Joshua(){
+import Register from "./../../assets/todo/register.png"
+import HomeTodo from "./../../assets/todo/homeTodo.png"
+import ModalTodo from "./../../assets/todo/modal.png"
+import ActivateTodo from "./../../assets/todo/activate.png"
+
+// Import Css
+import "./../to-do-list/todo.css"
+
+function Todo(){
 
     let imageJati = useRef(null)
     let imageJatiInner = useRef(null)
@@ -27,7 +30,7 @@ function Joshua(){
         gsap.to(initialJati, {duration:0, css:{visibility:"visible"}})
         // IMAGE
         tl.to(imageJatiReveal, {duration:1.4, width:"0%", ease:Power3.easeOut})
-        .from(imageJatiInner, {duration:1.4, scale:1.6, ease:Power3.easeOut, delay:"-1.4"})
+        .from(imageJatiInner, {duration:1.4, scale:1, ease:Power3.easeOut, delay:"-1.4"})
         .from(jatiText, {duration:1.4, opacity:0, ease:Power3.easeOut})
         .from(jatiProject, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1"})
         .from(jatiDeveloper, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1.4"})
@@ -78,9 +81,10 @@ function Joshua(){
                     <div className="headerJati d-flex px-0">
                         <div ref={el => imageJati = el} className="col-12 px-0">
                             <div className="image-outer" style={{overflow:"hidden"}}> 
-                                <img ref={ el => imageJatiInner = el} src={JoshuaHome} alt="" className="imageJumbotron" />
+                                <img ref={ el => imageJatiInner = el} src={Register} alt="" className="imageJumbotronTodo" />
+                                
                             </div>
-                            <div className="overlay-black">
+                            <div className="overlay-black-todo">
                                 
                             </div>
                         </div>
@@ -88,17 +92,17 @@ function Joshua(){
                 </div>
                 <div className="container" style={{marginTop:"20px"}}>
                     <div>
-                        <div className = "fontPlay fontHeader1" style={{overflow:"hidden"}}>
+                        <div className = "fontPlay fontHeader1Todo" style={{overflow:"hidden"}}>
                             <div ref={el => jatiText = el}>
-                                Joshua + partners
+                                To-do-list
                             </div>
                         </div>
-                        <div className = "fontKanit fontHeader2" style={{overflow:"hidden"}}>
+                        <div className = "fontKanit fontHeader2Todo" style={{overflow:"hidden"}}>
                             <div ref={el => jatiProject = el}>
-                                Commercial project - Deploying
+                                Non commercial personal project - Done
                             </div>
                         </div>
-                        <div className = "fontKanit fontHeader3" style={{overflow:"hidden"}}>
+                        <div className = "fontKanit fontHeader3Todo" style={{overflow:"hidden"}}>
                             <div ref={el => jatiDeveloper = el}>
                                 Full-stack Developer
                             </div>
@@ -113,18 +117,18 @@ function Joshua(){
                     <div className="d-flex">
                         <div className="body1 px-0">
                             <div className="textHeaderProject">
-                                Joshua Aditama + partners
+                                To-do-list
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. They create a connection 
-                                between art and human to experience interior and architectural spaces. From commercial to personal spaces drive their to explore 
-                                the specialty of each projects as works of art.
+                                To-do-list is a website that can describe itself by looking at the name. It's a simple and clean
+                                website reminder that you can write your to-do-list on it. You can add what you want to do
+                                and tick it when it done. You should make an account nad verified it before using this to-do-list website
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <div className="bodyImage1">
-                            <img src={JoshuaHome} alt="" className="imageProject" />
+                    <div className="d-flex justify-content-end">
+                        <div className="bodyImage1Todo">
+                            <img src={HomeTodo} alt="" className="imageProject" />
                         </div>
                     </div>
                     <div className="d-flex">
@@ -136,18 +140,16 @@ function Joshua(){
                                 Flow & Features
                             </div>
                             <div className="textBodyProject px-0">
-                                Joshua's required 5 pages consist of home, project, project detail, studio, contact and not to mention 
-                                the admin page. The features consist of nodemailer, JSON web token, post, edit and delete. It's quite tricky while making this website
-                                is a lot of customization in hover and slider effect. 
+                                Due the clean and simple concept, to-do-list only has 2 pages that is register/login page and home page.
+                                register/login page contains username and password while in home page there is a button called add data 
+                                dor you to add your activity and also looking your to-do-list directly in the same page.  
                                 
                             </div>
                         </div>
                     </div>
                     <div className="d-flex px-0">
-                        <div className="bodyImage2 d-flex">
-                            <img src={JoshuaProject} alt="" className="imageProject" style={{objectFit:"scale-down"}} />
-                            <img src={JoshuaProject2} alt="" className="imageProject mx-4" style={{objectFit:"scale-down"}} />
-                            <img src={JoshuaProject3} alt="" className="imageProject" style={{objectFit:"scale-down"}} />
+                        <div className="bodyImage2">
+                            <img src={ModalTodo} alt="" className="imageProjectTodo2" />
                         </div>
                     </div>
                     <div className="d-flex">
@@ -156,18 +158,19 @@ function Joshua(){
                                 Tools
                             </div>
                             <div className="textBodyProject col-7 px-0">
-                                I used reactJS, html, css, bootstrap to make Joshua's website. There are some 
-                                library that i used in order to create the front-end such as react-slick, react-strap
-                                and react-icon. While in the
-                                back-end I am using MySQL as a database, nodeJS, express and also 
-                                JSON web token "SHA256" to secure user's informations.
-                                Also use redux to passing the data from back to front and vice versa.
+                                I am a MERN stack developer so the tools that i use is React, HTML, CSS for the front-end
+                                and nodejs, express, mysql for the back-end. Even this website only contains 2 pages there are
+                                a lot of things that i must do to integritate the front and the back. Using redux as a bridge to sending the data
+                                and mysql as database.  I used a library called validator just to 
+                                help me making a validation in register and login page more easier. 
+                                Using JSON web token "SHA256" to secure user's informations
+                                and also local storage to send and get the data.
                             </div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-end">
                         <div className="bodyImage3">
-                           <img src={JoshuaContact} alt="" className="imageProject2" />
+                           <img src={ActivateTodo} alt="" className="imageProject2" />
                         </div>
                     </div>
                 </div>
@@ -178,4 +181,4 @@ function Joshua(){
     )
 }
 
-export default Joshua
+export default Todo

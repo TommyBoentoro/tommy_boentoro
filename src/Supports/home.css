@@ -118,7 +118,7 @@
 /* Home Body */
 .bgBody{
     background-color: var(--white);
-    height: 1662px;
+    height: 1300px;
     width: 100%;
 }
 
@@ -154,7 +154,7 @@
 .cardImg-2{
     width: 100%;
     object-fit: cover;
-    height: 300px;
+    height: 350px;
     transition-delay: .2s;
     transition-duration: .5s;
     cursor: pointer;
@@ -168,7 +168,7 @@
 .cardImg-1{
     width: 100%;
     object-fit: cover;
-    height: 420px;
+    height: 450px;
     transition-delay: .2s;
     transition-duration: .5s;
     cursor: pointer;
@@ -177,6 +177,7 @@
 .cardImg-1:hover{
     transform: translateY(-7px);
 }
+
 
 ::-webkit-scrollbar{
     width: 6px;

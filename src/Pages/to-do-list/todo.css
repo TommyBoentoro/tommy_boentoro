@@ -1,0 +1,58 @@
+.imageJumbotronTodo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.6) translateX(500px)
+}
+
+.fontHeader1Todo{
+    position: absolute;
+    font-size: 56px;
+    color: var(--white);
+    font-weight: 900;;
+    top: 30%;
+    left: 33%;
+    z-index: 2;
+}
+
+.fontHeader2Todo{
+    position: absolute;
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 300;;
+    top: 38%;
+    left: 37%;
+    z-index: 2;
+}
+
+.fontHeader3Todo{
+    position: absolute;
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 300;;
+    top: 41%;
+    left: 33%;
+    z-index: 2;
+}
+
+.overlay-black-todo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.imageProjectTodo2{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.bodyImage1Todo{
+    margin-top: 53px;
+    width: 50%;
+    height: 350px;
+}

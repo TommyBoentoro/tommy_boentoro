@@ -7,6 +7,7 @@ import gsap,{Power3} from "gsap"
 import JatiHome from "./../assets/Jati/testing.jpg"
 import JoshuaHome from "./../assets/Joshua/JoshuaHome.JPG"
 import TommyHome from "./../assets/Tommy web/TommyHome.png"
+import Register from "./../assets/todo/register.png"
 
 
 
@@ -140,13 +141,13 @@ function Home(){
 
             {/* Home Body */}
             <div className="bgBody">
-                <div className="container d-flex justify-content-center">
+                <div className="container justtify-content-center d-flex px-0">
                     <div className="d-flex col-12 px-0" style={{marginTop:"130px"}}>
                         <div className="col px-0">
-                            <div className="col-10 px-0" style={{marginTop:"130px"}}>
-                                <a href="/jati">
-                                    <img src={JatiHome} alt="" className="cardImg-1" />
-                                </a>
+                            <div className="col-11 px-0" style={{marginTop:"180px"}}>
+                                    <a href="/jati">
+                                        <img src={JatiHome} alt="" className="cardImg-1" />
+                                    </a>
                                 <div className="textCardHeading fontPlay">
                                     Jati
                                 </div>
@@ -161,7 +162,7 @@ function Home(){
                                 </div>
                             </div>
 
-                            <div className="col-10 px-0" style={{marginTop:"100px"}}>
+                            {/* <div className="col-10 px-0" style={{marginTop:"100px"}}>
                                 <img src={TommyHome} alt="" className="cardImg-1"/>
                                 <div className="textCardHeading fontPlay">
                                    Tommy Boentoro's
@@ -175,10 +176,10 @@ function Home(){
                                         View Project.
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
-                        <div className="col d-flex flex-column align-items-end">
-                            <div className="px-0" style={{width:"85%"}}>
+                        <div className="col d-flex flex-column align-items-end px-0">
+                            <div className="px-0 col" style={{width:"90%"}}>
                                 <a href="/joshua">
                                     <img src={JoshuaHome} alt="" className="cardImg-2" />
                                 </a>
@@ -194,8 +195,10 @@ function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div  style={{marginTop:"100px", width:"85%"}}>
-                                <img src={JatiHome} alt="" className="cardImg-2"/>
+                            <div className="px-0 col " style={{ width:"90%", marginTop:"300px"}}>
+                                <a href="/todolist">
+                                    <img src={Register} alt="" className="cardImg-2"/>
+                                </a>
                                 <div className="textCardHeading fontPlay">
                                     To-do-list 
                                 </div>
@@ -204,7 +207,7 @@ function Home(){
                                 </div>
                                 <div className="d-flex justify-content-end">
                                     <div className="textViewProject fontKanit">
-                                        View Project.
+                                        <a className="textViewProject fontKanit" href="/todolist">View Project.</a>
                                     </div>
                                 </div>
                             </div>
