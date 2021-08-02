@@ -56,3 +56,42 @@
     width: 50%;
     height: 350px;
 }
+
+@media (max-width:768px){
+    .imageJumbotronTodo{
+        position: absolute;
+        width:100%;
+        height: 40%;
+        object-fit: cover;
+        transform: scale(1);
+        top: 50vh;
+    }
+
+    .bodyImage1Todo{
+        margin-top: 53px;
+        width: 100%;
+        height: 350px;
+    }
+    
+    
+}
+
+
+@media (max-width:576px){
+    .imageJumbotronTodo{
+        position: absolute;
+        width:100%;
+        height: 40%;
+        object-fit: cover;
+        transform: scale(1);
+        top: 50vh;
+    }
+
+    .bodyImage1Todo{
+        margin-top: 53px;
+        width: 100%;
+        height: 350px;
+    }
+    
+    
+}

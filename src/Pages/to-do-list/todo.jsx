@@ -14,6 +14,9 @@ import ActivateTodo from "./../../assets/todo/activate.png"
 // Import Css
 import "./../to-do-list/todo.css"
 
+// Footer
+import Footer from "../../Components/footer"
+
 function Todo(){
 
     let imageJati = useRef(null)
@@ -99,7 +102,7 @@ function Todo(){
                         </div>
                         <div className = "fontKanit fontHeader2Todo" style={{overflow:"hidden"}}>
                             <div ref={el => jatiProject = el}>
-                                Non commercial personal project - Done
+                                Non commercial personal project
                             </div>
                         </div>
                         <div className = "fontKanit fontHeader3Todo" style={{overflow:"hidden"}}>
@@ -116,10 +119,15 @@ function Todo(){
                 <div className="container">
                     <div className="d-flex">
                         <div className="body1 px-0">
-                            <div className="textHeaderProject">
-                                To-do-list
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="textHeaderProject">
+                                    To-do-list
+                                </div>
+                                <div className="mx-3 textlink">
+                                     Contact me for the link!
+                                </div>
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 To-do-list is a website that can describe itself by looking at the name. It's a simple and clean
                                 website reminder that you can write your to-do-list on it. You can add what you want to do
                                 and tick it when it done. You should make an account nad verified it before using this to-do-list website
@@ -131,7 +139,7 @@ function Todo(){
                             <img src={HomeTodo} alt="" className="imageProject" />
                         </div>
                     </div>
-                    <div className="d-flex">
+                    <div className="d-flex flex-md-row flex-column">
                         <div className="col">
 
                         </div>
@@ -157,7 +165,7 @@ function Todo(){
                             <div className="textHeaderProject">
                                 Tools
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 I am a MERN stack developer so the tools that i use is React, HTML, CSS for the front-end
                                 and nodejs, express, mysql for the back-end. Even this website only contains 2 pages there are
                                 a lot of things that i must do to integritate the front and the back. Using redux as a bridge to sending the data
@@ -176,6 +184,7 @@ function Todo(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
         
     )

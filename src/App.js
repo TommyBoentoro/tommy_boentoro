@@ -32,7 +32,7 @@ class App extends React.Component{
         <Route path="/gsap2" component={Gsap2}/>
         <Route path="/about2" component={About2}/>
       </Switch>
-      <Footer/>
+    
      </BrowserRouter>
     )
   }

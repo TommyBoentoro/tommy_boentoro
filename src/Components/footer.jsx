@@ -3,33 +3,30 @@ import "./../Components/footer.css"
 
 function Footer (){
     return(
-        <div className="bgFooter">
-            <div className="container-fluid  d-flex" style={{color:"white", paddingLeft:"100px", paddingRight:"100px"}}>
-                <div className="footerLeft col px-0">
-                    <div className="footerHeader fontPlay">
-                        Tommyboentoro@gmail.com
+        <div className="bgFooter d-flex align-items-center">
+            <div className="container-fluid d-flex px-5" style={{color:"white"}}>
+                <div className="col px-0 fontPlay">
+                    <div className="footer1" >
+                        Tommyboentoro@gmail.com 
                     </div>
-                    <div className="footerBody fontKanit  col-6 px-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor in ligula eget placerat. 
-                    Nunc odio nulla, sollicitudin at diam non, pulvinar facilisis sapien. 
-                    Aenean vel porttitor metus. Morbi laoreet turpis sit amet magna varius facilisis. 
-                    Vivamus euismod dui ac nisi dapibus, sed malesuada urna tincidunt. 
-                    Integer suscipit augue neci.
+                    <div className="fontKanit">
+                        <div className="footerBody col-sm-10 col-12 px-0">
+                            23 years old from Indonesia who like to turn your ideas into an outstanding 
+                            website.I am a full-stack developer who using MERN Stack and find a oportunity to collaborate
+                            with you!.
+                        </div>
                     </div>
                 </div>
-                <div className="footerRight d-flex flex-column align-items-end col  px-0">
+                <div className="footerRight d-flex flex-column fontPlay align-items-end col px-0">
                     <div>
-                        <div className="footerHeader fontPlay">
+                        <div className="footer1" style={{fontSize:"18px"}}>
                             Contact Me
                         </div>
                         <div className="footerBody fontKanit">
-                            Instagram
+                            <a className="contactMe" target="_blank" href="https://www.instagram.com/tommyboentoro/">Instagram</a>
                         </div>
                         <div className="footerBody fontKanit">
-                            Email
-                        </div>
-                        <div className="footerBody fontKanit">
-                            Upwork
+                            Twitter
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,9 @@ import JatiHome from "./../../assets/Jati/Home.png"
 import JatiPayment from "./../../assets/Jati/Payment.png"
 import JatiLogin from "./../../assets/Jati/Login.png"
 
+// Footer
+import Footer from "../../Components/footer"
+
 function Jati(){
 
     let imageJati = useRef(null)
@@ -111,16 +114,19 @@ function Jati(){
                 <div className="container">
                     <div className="d-flex">
                         <div className="body1 px-0">
-                            <div className="textHeaderProject">
-                                Jati
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="textHeaderProject">
+                                    Jati
+                                </div>
+                                <div className="mx-3 textlink">
+                                     Contact me for the link!
+                                </div>
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 Jati is a furniture online shop type of project such as IKEA or fabelio.
                                 Unfortunately i made Jati with front-end only so i used a fake-server as the back-end
                                 I made this project to learn more about MERN and how to applied it in online bussiness model.
                                 I am not really focusing on the design appeareances but the flow of online business model itself.
-
-                                
                             </div>
                         </div>
                     </div>
@@ -129,7 +135,7 @@ function Jati(){
                             <img src={JatiHome} alt="" className="imageProject" />
                         </div>
                     </div>
-                    <div className="d-flex">
+                    <div className="d-flex flex-md-row flex-column">
                         <div className="col">
 
                         </div>
@@ -155,7 +161,7 @@ function Jati(){
                             <div className="textHeaderProject">
                                 Tools
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 I used HTML, CSS, bootstrap, and of course reactJS library to make Jati. For handle the
                                 back-end I used JSON server and create a fake-server. I used a library called validator just to 
                                 help me making a validation in register and login page more easier. 
@@ -174,6 +180,7 @@ function Jati(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
         
     )

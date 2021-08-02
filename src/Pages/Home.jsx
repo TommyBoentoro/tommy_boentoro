@@ -9,7 +9,8 @@ import JoshuaHome from "./../assets/Joshua/JoshuaHome.JPG"
 import TommyHome from "./../assets/Tommy web/TommyHome.png"
 import Register from "./../assets/todo/register.png"
 
-
+// Footer
+import Footer from "../Components/footer"
 
 // import Function
 import SmoothScroll from "smooth-scroll"
@@ -36,13 +37,14 @@ function Home(){
         .from(firstLine, {duration:0.5, opacity:0, x:400, ease:Power3.easeOut}, .2)
         .from(secondLine, {duration:0.5, opacity:0, x:-400, ease:Power3.easeOut}, .4)
         .from(thirdLine, {duration:1.2, y:40, ease:Power3.easeOut},1.4)
-        .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.3)
+        .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.4)
         .from(fifthLine, {duration:1.2, y:40, ease:Power3.easeOut},2.1)
         .from(sixthLine, {duration:1.2, y:40, ease:Power3.easeOut}, 2.1)
-        .from(seventhLine, {duration:1, y:120, ease:Power3.easeOut}, 2)
+        .from(seventhLine, {duration:1, y:250, ease:Power3.easeOut}, 1.9)
     })
 
     return(
+        <>
         <div ref={el => initiateHome = el} className="HomeAwal scrollSmooth">
             {/* Home Head and Navbar */}
             <div className="bg">
@@ -105,7 +107,7 @@ function Home(){
                         <div className="col-2 px-0">
                             
                         </div>
-                        <div className="col-4 fontPlay px-0">
+                        <div className="col-3 fontPlay px-0">
                             <div className="welcome" style={{overflow:"hidden"}}>
                                 <div ref={el => fifthLine = el}>
                                     Welcome.
@@ -117,34 +119,26 @@ function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5 px-0">
-                            <div className="bodyWelcome fontKanit" style={{overflow:"hidden"}}>
+                        <div className="col-5">
+                            <div className="bodyWelcome fontKanit col-12" style={{overflow:"hidden"}}>
                                 <div ref={el => seventhLine = el}>
-                                    Lorem ipsum dolor sit amet,consectetur adipiscing elit. 
-                                    In porttitor in ligula eget placerat. Nunc odio nulla, 
-                                    sollicitudin at diam non, pulvinar facilisis sapien. 
-                                    Aenean vel porttitor metus. 
-                                    Morbi laoreet turpis sit amet magna varius facilisis. 
-                                    Vivamus euismod dui ac nisi dapibus, 
-                                    sed malesuada urna tincidunt. Integer suscipit augue neci.
+                                23 years old from Indonesia who like to turn your ideas into an outstanding 
+                                website.I am a full-stack developer who using MERN Stack and find a oportunity to collaborate
+                                with you!.
                                 </div>
                             </div>
                         </div>
-                        <div className="col-1 px-0">
-                            5
-                        </div>
-                    </div>
-
-                    
+                        
+                    </div> 
                 </div>
             </div>
 
             {/* Home Body */}
             <div className="bgBody">
-                <div className="container justtify-content-center d-flex px-0">
-                    <div className="d-flex col-12 px-0" style={{marginTop:"130px"}}>
+                <div className="container justify-content-center d-flex px-0">
+                    <div className="d-flex col-12 flex-column flex-md-row px-0 scroll martopBody">
                         <div className="col px-0">
-                            <div className="col-11 px-0" style={{marginTop:"180px"}}>
+                            <div className="col-md-11 col-12 px-md-0 px-3 martopJati">
                                     <a href="/jati">
                                         <img src={JatiHome} alt="" className="cardImg-1" />
                                     </a>
@@ -178,8 +172,8 @@ function Home(){
                                 </div>
                             </div> */}
                         </div>
-                        <div className="col d-flex flex-column align-items-end px-0">
-                            <div className="px-0 col" style={{width:"90%"}}>
+                        <div className="col d-flex flex-column align-md-items-end px-0">
+                            <div className="px-md-0 px-3 col widthJoshua ">
                                 <a href="/joshua">
                                     <img src={JoshuaHome} alt="" className="cardImg-2" />
                                 </a>
@@ -195,7 +189,7 @@ function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="px-0 col " style={{ width:"90%", marginTop:"300px"}}>
+                            <div className="px-md-0 px-3 col widthJoshua marginRegister">
                                 <a href="/todolist">
                                     <img src={Register} alt="" className="cardImg-2"/>
                                 </a>
@@ -216,6 +210,9 @@ function Home(){
                 </div>
             </div>
         </div>
+        {/* <Footer/> */}
+        </>
+        
         
     )
 }

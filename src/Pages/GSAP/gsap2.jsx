@@ -31,11 +31,16 @@ function Gsap2(){
     let tl = gsap.timeline()
 
     useEffect(() => {
-        console.log(hello)
-        tl.to(container, {duration:0, css:{visibility: "visible"}})
-        .to(imageReveal, {duration:1.4, width:"0%", ease:Power2.easeOut})
-        .from(kucing, {duration:1.4, scale:1.6, ease:Power2.easeInOut, delay:"-1.4"})
-        .from(hello,{duration:1, opacity:0, y:180, ease:Power2, delay:"-0.5"})
+        // console.log(hello)
+        // tl.to(container, {duration:0, css:{visibility: "visible"}})
+        // .to(imageReveal, {duration:1.4, width:"0%", ease:Power2.easeOut})
+        // .from(kucing, {duration:1.4, scale:1.6, ease:Power2.easeInOut, delay:"-1.4"})
+        // .from(hello,{duration:1, opacity:0, y:180, ease:Power2, delay:"-0.5"})
+
+        gsap.to(".box1",{
+            scrollTrigger: ".box1",
+            x:200,
+        })
     })
 
 
@@ -48,6 +53,14 @@ function Gsap2(){
                 <div className="marginGsap">
                     <div ref={el => {hello = el}} className="newGsap">
                         Hello New GSAP
+                    </div>
+                </div>
+            </div>
+
+            <div className="containerscroll">
+                <div className="container border">
+                    <div className="box1 border my-5" >
+                        Gerak
                     </div>
                 </div>
             </div>

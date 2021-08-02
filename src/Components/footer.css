@@ -1,14 +1,13 @@
 .bgFooter{
-    height: 400px;
+    height: 300px;
     width: 100%;
     background-color: var(--black);
 }
 
-.footerHeader{
-    font-size: 24px;
+.footer1{
+    font-size: 36px;
     color: var(--green);
-    font-weight: 700;
-    margin-top: 80px;
+    font-weight: 900;
 }
 
 .footerBody{
@@ -16,4 +15,24 @@
     color: var(--white);
     font-weight: 300;
     margin-top: 10px;
+    cursor: pointer;
+    letter-spacing: 0.002cm;
+}
+
+.contactMe{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contactMe:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media (max-width:576px){
+    .footer1{
+        font-size: 18px;
+        color: var(--green);
+        font-weight: 700;
+    }
 }

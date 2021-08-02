@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.widthFooter123{
+    width: 65%;
+}
+
 .containerDalam{
     padding-top: 16vh;
     height: 100vh;
@@ -33,9 +37,10 @@
 
 .textAbout3{
     margin-top: 10px;
-    font: 18px;
+    font-size: 18px;
     color: var(--white);
     font-weight: 300;
+    width: 80%;
 }
 
 .textAbout4{
@@ -49,11 +54,12 @@
     font-weight: 200;
     color: var(--green);
     margin-top: -5px;
-    cursor: pointer;
 }
 
 .textAbout5:hover{
     opacity: 0.6;
+    color: var(--green);
+    text-decoration: none;
 }
 
 
@@ -65,7 +71,7 @@
 .imageTest{
     height: 100%;
     width: 100%;
-    object-fit: co;
+    object-fit: cover;
 }
 
 .rightsAbout{
@@ -86,17 +92,62 @@
     color: var(--white);
     opacity: 0.5;
     letter-spacing: 0.145em;
+    z-index: 0;
+    display: block;
     
 }
 
-.aboutAbout2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100px) rotate(-270deg);
-    font-size: 144px;
-    font-weight: 900;
-    color: var(--white);
-    opacity: 0.5;
-    letter-spacing: 0.145em; 
+
+.imageContainerAbout{
+    display: block;
 }
+
+@media (max-width: 992px){
+   .textAbout2{
+       font-size: 24px;
+   }
+
+   .textAbout3{
+       font-size: 14px;
+   }
+}
+
+@media (max-width: 768px){
+    .textAbout2{
+        font-size: 24px;
+    }
+ 
+    .textAbout3{
+        font-size: 14px;
+    }
+
+    .imageContainerAbout{
+        display: none;
+    }
+
+    .textAbout3{
+        margin-top: 10px;
+        font-size: 18px;
+        color: var(--white);
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .aboutAbout{
+        position: absolute;
+        top:1;
+        right: 0;
+        transform: translate(100px) rotate(-270deg);
+        font-size: 144px;
+        font-weight: 900;
+        color: var(--white);
+        opacity: 0.5;
+        letter-spacing: 0.145em;
+        z-index: 0;
+        display: none;   
+    }
+
+    .widthFooter123{
+        width: 100%;
+    }
+ }

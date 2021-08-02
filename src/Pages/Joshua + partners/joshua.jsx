@@ -11,6 +11,9 @@ import JoshuaProject from "./../../assets/Joshua/home.png"
 import JoshuaProject2 from "./../../assets/Joshua/home2.png"
 import JoshuaProject3 from "./../../assets/Joshua/home3.png"
 
+// Footer
+import Footer from "../../Components/footer"
+
 function Joshua(){
 
     let imageJati = useRef(null)
@@ -112,10 +115,15 @@ function Joshua(){
                 <div className="container">
                     <div className="d-flex">
                         <div className="body1 px-0">
-                            <div className="textHeaderProject">
-                                Joshua Aditama + partners
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="textHeaderProject">
+                                    Joshua Aditama + partners
+                                </div>
+                                <div className="mx-3 textlink">
+                                     Contact me for the link!
+                                </div>
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. They create a connection 
                                 between art and human to experience interior and architectural spaces. From commercial to personal spaces drive their to explore 
                                 the specialty of each projects as works of art.
@@ -127,7 +135,7 @@ function Joshua(){
                             <img src={JoshuaHome} alt="" className="imageProject" />
                         </div>
                     </div>
-                    <div className="d-flex">
+                    <div className="d-flex flex-md-row flex-column">
                         <div className="col">
 
                         </div>
@@ -155,7 +163,7 @@ function Joshua(){
                             <div className="textHeaderProject">
                                 Tools
                             </div>
-                            <div className="textBodyProject col-7 px-0">
+                            <div className="textBodyProject col-md-7 col-12 px-0">
                                 I used reactJS, html, css, bootstrap to make Joshua's website. There are some 
                                 library that i used in order to create the front-end such as react-slick, react-strap
                                 and react-icon. While in the
@@ -173,6 +181,7 @@ function Joshua(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
         
     )
