@@ -18,12 +18,13 @@ function About2 (){
     let emailName = useRef(null)
     let instagram = useRef(null)
     let instagramName = useRef(null)
-    let image = useRef(null)
-    let containerImage = useRef(null)
+    // let image = useRef(null)
+    // let containerImage = useRef(null)
 
     useEffect(()=>{
-        tl.from(containerImage, {duration:1.4,y:1000, ease:Power3.easeOut})
-        .from(image, {duration:1.4,scale:1.6, ease:Power3.easeOut, delay:-1.4})
+        tl
+        // .from(containerImage, {duration:1.4,y:1000, ease:Power3.easeOut})
+        // .from(image, {duration:1.4,scale:1.6, ease:Power3.easeOut, delay:-1.4})
         .from(hi, {duration:1, opacity:0, x:-700, ease:Power3.easeOut},1)
         .from(body, {duration:1.4, opacity:0, ease:Power3.easeOut})
         .from(email, {duration:1.4, y:100, ease:Power3.easeOut},2.5)
@@ -39,7 +40,7 @@ function About2 (){
                 <div  style={{color:"white"}}>
                     <div className="d-flex flex-column  align-items-center containerDalam" >
                         <div className="d-flex " style={{width:"100%"}}>
-                            <div className="px-0 col-md-6 col-12 fontKanit">
+                            <div className="px-0  col-12 fontKanit">
                                 <div ref={el =>  hi = el}  className="d-flex align-items-center">
                                     <div className="stripAbout">
 
@@ -75,11 +76,11 @@ function About2 (){
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6 px-0 imageContainerAbout">
+                            {/* <div className="col-6 px-0 imageContainerAbout">
                                 <div ref={el => containerImage = el} className="imageContainer" style={{overflow:"hidden"}}>
                                     <img src={Dog} ref={el => image = el} alt="" className="imageTest"/>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Section 2 */}
