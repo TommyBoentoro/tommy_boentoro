@@ -1,12 +1,8 @@
 import React, {useRef, useEffect} from "react";
-import {CopyToClipboard} from "react-copy-to-clipboard"
 import gsap,{Power3} from "gsap";
 
 import "./../Supports/about2.css"
-
-// Images
-import Dog from "./../assets/About/dog.jpg"
-
+import "./../Supports/about.css"
 
 function About2 (){
 
@@ -106,7 +102,7 @@ function About2 (){
                                     </div>
                                     <div style={{overflow:"hidden"}}>
                                         <div ref={el => instagramName = el}  style={{cursor:"pointer"}}>
-                                            <a className="textAbout5" target="_blank" href="https://www.instagram.com/tommyboentoro/">tommyboentoro</a>
+                                            <a className="textAbout5" href="https://www.instagram.com/tommyboentoro/">tommyboentoro</a>
                                         </div>
                                     </div>
                                 </div>

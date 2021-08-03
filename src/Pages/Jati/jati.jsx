@@ -15,7 +15,6 @@ import Footer from "../../Components/footer"
 
 function Jati(){
 
-    let imageJati = useRef(null)
     let imageJatiInner = useRef(null)
     let initialJati = useRef(null)
     let jatiText = useRef(null)
@@ -78,7 +77,7 @@ function Jati(){
             <div className="bgJati">
                 <div className="d-flex">
                     <div className="headerJati d-flex px-0">
-                        <div ref={el => imageJati = el} className="col-12 px-0">
+                        <div  className="col-12 px-0">
                             <div className="image-outer" style={{overflow:"hidden"}}> 
                                 <img ref={ el => imageJatiInner = el} src={JatiTest} alt="" className="imageJumbotron" />
                             </div>

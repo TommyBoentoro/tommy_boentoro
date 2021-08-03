@@ -23,7 +23,7 @@ function Footer (){
                             Contact Me
                         </div>
                         <div className="footerBody fontKanit">
-                            <a className="contactMe" target="_blank" href="https://www.instagram.com/tommyboentoro/">Instagram</a>
+                            <a className="contactMe" href="https://www.instagram.com/tommyboentoro/">Instagram</a>
                         </div>
                         <div className="footerBody fontKanit">
                             Twitter

@@ -6,14 +6,10 @@ import gsap,{Power3} from "gsap"
 // Images
 import JatiHome from "./../assets/Jati/testing.jpg"
 import JoshuaHome from "./../assets/Joshua/JoshuaHome.JPG"
-import TommyHome from "./../assets/Tommy web/TommyHome.png"
 import Register from "./../assets/todo/register.png"
 
 // Footer
 import Footer from "../Components/footer"
-
-// import Function
-import SmoothScroll from "smooth-scroll"
 
 function Home(){
     let tl = gsap.timeline({delay:0.4})
