@@ -44,3 +44,15 @@
         font-weight: 700;
     }
 }
+
+@media (max-width:459px){
+     .displayFooter{
+         display: none;
+     }
+
+     .bgFooter{
+        height: 150px;
+        width: 100%;
+        background-color: var(--black);
+    }
+}

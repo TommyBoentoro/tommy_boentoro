@@ -254,6 +254,7 @@
 }
 
 @media (max-width:768px){
+
     .welcome{
         color: var(--green);
         font-size: 28px;
@@ -314,16 +315,26 @@
 
     .widthJoshua{
         width: 100%;
-        margin-top: 180px;
+        margin-top: 675px;
     }
 
     .marginRegister{
         margin-top: 550px;
     }
 
+    .cardImg-2{
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+        transition-delay: .2s;
+        transition-duration: .5s;
+        cursor: pointer;
+    }
+
 }
 
 @media (max-width:576px){
+
 
     .hello{
         margin-top: 10vh;
@@ -408,6 +419,15 @@
         margin-top: 50px;
     }
 
+    .cardImg-2{
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+        transition-delay: .2s;
+        transition-duration: .5s;
+        cursor: pointer;
+    }
+
     .cardImg-1{
         width: 100%;
         object-fit: cover;
@@ -425,12 +445,37 @@
 
     .widthJoshua{
         width: 100%;
-        margin-top: 0px;
+        margin-top: 550px;
     }
 
     .marginRegister{
         margin-top: 550px;
     }
     
+}
+
+@media (max-width:459px){
+    .textTahun{
+        display: none;
+    }
+
+    .garisKedua{
+        display: none;
+    }
+
+    .web{
+        color: var(--white);
+        font-weight: 900;
+        font-size: 40px;
+        margin-top: 14vh;
+        margin-left: 10px;
+    }
+
+    .indonesian2{
+        color: var(--white);
+        font-size:24px;
+        font-weight: 900;
+        margin-top: 0px;
+    }
 }
 

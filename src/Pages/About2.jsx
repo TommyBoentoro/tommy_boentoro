@@ -81,7 +81,7 @@ function About2 (){
 
                         {/* Section 2 */}
                         <div className="d-flex fontKanit widthFooter123">
-                            <div className="d-flex justify-content-between " style={{ marginTop:"100px", width:"100%"}}>
+                            <div className="d-flex justify-content-between flex-sm-row flex-column " style={{ marginTop:"100px", width:"100%"}}>
                                 <div className="d-flex flex-column align-items-center">
                                     <div style={{overflow:"hidden"}}>
                                         <div ref={el => email = el} className=" textAbout4">
