@@ -28,7 +28,7 @@ function Jati(){
         gsap.to(initialJati, {duration:0, css:{visibility:"visible"}})
         // IMAGE
         tl.to(imageJatiReveal, {duration:1.4, width:"0%", ease:Power3.easeOut})
-        .from(imageJatiInner, {duration:1.4, scale:1.6, ease:Power3.easeOut, delay:"-1.4"})
+        .from(imageJatiInner, {duration:1.4, opacity:0, ease:Power3.easeOut, delay:"-1.4"})
         .from(jatiText, {duration:1.4, opacity:0, ease:Power3.easeOut})
         .from(jatiProject, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1"})
         .from(jatiDeveloper, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1.4"})
