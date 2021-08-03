@@ -129,7 +129,7 @@ function Todo(){
                             <div className="textBodyProject col-md-7 col-12 px-0">
                                 To-do-list is a website that can describe itself by looking at the name. It's a simple and clean
                                 website reminder that you can write your to-do-list on it. You can add what you want to do
-                                and tick it when it done. You should make an account nad verified it before using this to-do-list website
+                                and tick it when it is done. You should make an account nad verified it before using this to-do-list website
                             </div>
                         </div>
                     </div>
@@ -147,9 +147,9 @@ function Todo(){
                                 Flow & Features
                             </div>
                             <div className="textBodyProject px-0">
-                                Due the clean and simple concept, to-do-list only has 2 pages that is register/login page and home page.
-                                register/login page contains username and password while in home page there is a button called add data 
-                                dor you to add your activity and also looking your to-do-list directly in the same page.  
+                                Due the clean and simple concept, to-do-list only has 2 pages, register/login page and home page.
+                                Register/login page contains username and password while in home page there is a button called add data 
+                                for you to add your activity and also looking your to-do-list directly in the same page.  
                                 
                             </div>
                         </div>

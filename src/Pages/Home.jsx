@@ -119,7 +119,7 @@ function Home(){
                             <div className="bodyWelcome fontKanit col-12 py-2" style={{overflow:"hidden"}}>
                                 <div ref={el => seventhLine = el}>
                                 23 years old from Indonesia who like to turn your ideas into an outstanding 
-                                website.I am a full-stack developer who using MERN Stack and find a oportunity to collaborate
+                                website.I am a full-stack developer who using MERN Stack and find an oportunity to collaborate
                                 with you!.
                                 </div>
                             </div>

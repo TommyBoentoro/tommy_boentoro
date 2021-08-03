@@ -145,7 +145,7 @@ function Joshua(){
                             <div className="textBodyProject px-0">
                                 Joshua's required 5 pages consist of home, project, project detail, studio, contact and not to mention 
                                 the admin page. The features consist of nodemailer, JSON web token, post, edit and delete. It's quite tricky while making this website
-                                is a lot of customization in hover and slider effect. 
+                                because a lot of customization in hover and slider effect. 
                                 
                             </div>
                         </div>
