@@ -34,7 +34,7 @@ function About2 (){
     })
 
     return(
-        <div className="bgAbout2" style={{overflow:"hidden"}}>
+        <div className="bgAbout2" style={{overflow:"auto"}}>
             <div className="container px-5">
                 <div  style={{color:"white"}}>
                     <div className="d-flex flex-column  align-items-center containerDalam" >
@@ -69,7 +69,9 @@ function About2 (){
                                         </div>
                                     </div>
                                     <div style={{marginTop:"20px"}}>
-                                        <input type="button" value="contact Me" className="button-success" />
+                                       <a href="mailto:tommyboentoro@gmail.com">
+                                            <input  type="button" value="contact Me" className="button-success" />
+                                       </a>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +93,7 @@ function About2 (){
                                     </div>
                                     <div style={{overflow:"hidden"}}>
                                         <div ref={el => emailName = el} >
-                                        <a className="textAbout5" target="_blank" href="">tommyboentoro@gmail.com</a>
+                                        <a className="textAbout5"  href="mailto:tommyboentoro@gmail.com">tommyboentoro@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>

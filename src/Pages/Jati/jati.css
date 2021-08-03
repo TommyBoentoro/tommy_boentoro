@@ -47,14 +47,14 @@
 
 .fontHeader1{
     position: absolute;
-    font-size: 56px;
+    font-size: 50px;
     color: var(--white);
     font-weight: 900;;
     top: 0;
     left: 0;
     z-index: 2;
     margin-top: 30vh;
-    margin-left: 30vh;
+    margin-left: 50vh;
 }
 
 .fontHeader2{
@@ -66,7 +66,7 @@
     left: 0;
     z-index: 2;
     margin-top: 38vh;
-    margin-left: 34vh;
+    margin-left: 54vh;
 }
 
 .fontHeader3{
@@ -78,7 +78,7 @@
     left: 0;
     z-index: 2;
     margin-top: 41vh;
-    margin-left: 30vh;
+    margin-left: 50vh;
 }
 
 
@@ -155,14 +155,14 @@
 
     .fontHeader1{
         position: absolute;
-        font-size: 56px;
+        font-size: 48px;
         color: var(--white);
         font-weight: 900;;
         top: 0;
         left: 0;
         z-index: 2;
         margin-top: 30vh;
-        margin-left: 25vh;
+        margin-left: 20vh;
     }
     
     .fontHeader2{

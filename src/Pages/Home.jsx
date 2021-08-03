@@ -38,8 +38,8 @@ function Home(){
         .from(secondLine, {duration:0.5, opacity:0, x:-400, ease:Power3.easeOut}, .4)
         .from(thirdLine, {duration:1.2, y:40, ease:Power3.easeOut},1.4)
         .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.4)
-        .from(fifthLine, {duration:1.2, y:40, ease:Power3.easeOut},2.1)
-        .from(sixthLine, {duration:1.2, y:40, ease:Power3.easeOut}, 2.1)
+        .from(fifthLine, {duration:1.2, y:45, ease:Power3.easeOut},2.1)
+        .from(sixthLine, {duration:1.2, y:80, ease:Power3.easeOut}, 2.1)
         .from(seventhLine, {duration:1, y:250, ease:Power3.easeOut}, 1.9)
     })
 
@@ -103,7 +103,7 @@ function Home(){
                       
                     </div>
 
-                    <div className="d-flex sectionWelcome">
+                    <div className="d-flex container sectionWelcome">
                         <div className="col-2 px-0">
                             
                         </div>
@@ -119,8 +119,8 @@ function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
-                            <div className="bodyWelcome fontKanit col-12" style={{overflow:"hidden"}}>
+                        <div className="col-6">
+                            <div className="bodyWelcome fontKanit col-12 py-2" style={{overflow:"hidden"}}>
                                 <div ref={el => seventhLine = el}>
                                 23 years old from Indonesia who like to turn your ideas into an outstanding 
                                 website.I am a full-stack developer who using MERN Stack and find a oportunity to collaborate
@@ -135,7 +135,7 @@ function Home(){
 
             {/* Home Body */}
             <div className="bgBody">
-                <div className="container justify-content-center d-flex px-0">
+                <div className="container justify-content-center border d-flex px-0">
                     <div className="d-flex col-12 flex-column flex-md-row px-0 scroll martopBody">
                         <div className="col px-0">
                             <div className="col-md-11 col-12 px-md-0 px-3 martopJati">
@@ -173,7 +173,7 @@ function Home(){
                             </div> */}
                         </div>
                         <div className="col d-flex flex-column align-md-items-end px-0">
-                            <div className="px-md-0 px-3 col widthJoshua ">
+                            <div className="px-md-0 px-3 col widthJoshua">
                                 <a href="/joshua">
                                     <img src={JoshuaHome} alt="" className="cardImg-2" />
                                 </a>
@@ -210,7 +210,7 @@ function Home(){
                 </div>
             </div>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
         </>
         
         

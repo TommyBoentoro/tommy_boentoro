@@ -116,7 +116,7 @@
 
 .selamatDatang{
     color: var(--white);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 900;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .widthJoshua{
-    width: 90%;
+    width: 100%;
 }
 
 .cardImg-2{
@@ -254,6 +254,12 @@
 }
 
 @media (max-width:768px){
+    .welcome{
+        color: var(--green);
+        font-size: 28px;
+        font-weight: 900;
+    }
+
     .hello{
         margin-top: 10vh;
         color: var(--white);
