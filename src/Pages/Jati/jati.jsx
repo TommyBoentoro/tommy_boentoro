@@ -17,9 +17,9 @@ function Jati(){
 
     let imageJatiInner = useRef(null)
     let initialJati = useRef(null)
-    let jatiText = useRef(null)
-    let jatiProject = useRef(null)
-    let jatiDeveloper = useRef(null)
+    // let jatiText = useRef(null)
+    // let jatiProject = useRef(null)
+    // let jatiDeveloper = useRef(null)
 
     let tl = gsap.timeline({delay:".8"})
     let imageJatiReveal = CSSRulePlugin.getRule(`.image-outer:after`)
@@ -29,9 +29,9 @@ function Jati(){
         // IMAGE
         tl.to(imageJatiReveal, {duration:1.4, width:"0%", ease:Power3.easeOut})
         .from(imageJatiInner, {duration:1.4, opacity:0, ease:Power3.easeOut, delay:"-1.4"})
-        .from(jatiText, {duration:1.4, opacity:0, ease:Power3.easeOut})
-        .from(jatiProject, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1"})
-        .from(jatiDeveloper, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1.4"})
+        // .from(jatiText, {duration:1.4, opacity:0, ease:Power3.easeOut})
+        // .from(jatiProject, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1"})
+        // .from(jatiDeveloper, {duration:1.4, y:100, ease:Power3.easeOut, delay:"-1.4"})
         
     })
 
@@ -87,7 +87,7 @@ function Jati(){
                         </div>
                     </div>
                 </div>
-                <div className="container" style={{marginTop:"20px"}}>
+                {/* <div className="container" style={{marginTop:"20px"}}>
                     <div>
                         <div className = "fontPlay fontHeader1" style={{overflow:"hidden"}}>
                             <div ref={el => jatiText = el}>
@@ -105,7 +105,7 @@ function Jati(){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Body */}

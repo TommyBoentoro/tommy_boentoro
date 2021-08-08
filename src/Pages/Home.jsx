@@ -56,7 +56,7 @@ function Home(){
                         <div className="col px-0">
                             
                         </div>
-                        <div className="col px-0">
+                        <div className="col px-0 containergarispertama">
                             <div ref={el => firstLine = el} className="full-stack fontkanit">
                                 <div>
                                     Full-stack Developer
@@ -66,7 +66,7 @@ function Home(){
                         </div>
                     </div>
                     
-                    <div ref={el => secondLine = el} className="d-flex fontKanit" style={{color:"white"}}>
+                    <div ref={el => secondLine = el} className="d-flex fontKanit containergariskedua">
                         <div className="col-1 px-0">
                             
                         </div>
@@ -115,7 +115,7 @@ function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-8">
                             <div className="bodyWelcome fontKanit col-12 py-2" style={{overflow:"hidden"}}>
                                 <div ref={el => seventhLine = el}>
                                 23 years old from Indonesia who like to turn your ideas into an outstanding 
@@ -131,7 +131,7 @@ function Home(){
 
             {/* Home Body */}
             <div className="bgBody">
-                <div className="container justify-content-center border d-flex px-0">
+                <div className="container justify-content-center d-flex px-0">
                     <div className="d-flex col-12 flex-column flex-md-row px-0 scroll martopBody">
                         <div className="col px-0">
                             <div className="col-md-11 col-12 px-md-0 px-3 martopJati">
@@ -185,7 +185,7 @@ function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="px-md-0 px-3 col widthJoshua marginRegister">
+                            {/* <div className="px-md-0 px-3 col widthJoshua marginRegister">
                                 <a href="/todolist">
                                     <img src={Register} alt="" className="cardImg-2"/>
                                 </a>
@@ -200,7 +200,7 @@ function Home(){
                                         <a className="textViewProject fontKanit" href="/todolist">View Project.</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
