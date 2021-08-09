@@ -34,3 +34,25 @@
     text-decoration: none;
     color: var(--white);
 }
+
+
+@media (max-width:576px){
+    .navTommy{
+        cursor: pointer;
+        transition: all .5s;
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .navAbout{
+        cursor: pointer;
+        transition: all .5s;
+        padding-right: 1px;
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}

@@ -4,13 +4,13 @@ import "./../Components/navbar.css"
 function Navbar (){
     return(
         <>
-            <nav className="navbar container-fluid px-sm-5 fixed-top">
-                <a className="navTommy fontKanit" href="/" style={{textDecoration:"none", fontSize:"18px", fontWeight:"700"}}>Tommy Boentoro</a>
-                <a className="d-flex" href="/about" style={{textDecoration:"none"}}>
-                    <div className="navAbout fontKanit" style={{fontSize:"18px", fontWeight:"700"}}>
+            <nav className="navbar fontKanit container-fluid px-sm-5 px-4 fixed-top">
+                <a className=" navTommy" href="/">Tommy Boentoro</a>
+                <a className="d-flex" href="/about" >
+                    <div className="navAbout " >
                         About
                     </div>
-                    <div className="navAbout fontKanit" style={{fontSize:"18px", fontWeight:"700"}}>
+                    <div className="navAbout " >
                         .
                     </div>
                 </a>

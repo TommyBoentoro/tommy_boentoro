@@ -588,6 +588,14 @@
 }
 
 @media (max-width:459px){
+
+    .hello{
+        margin-top: 50px;
+        color: var(--white);
+        font-size: 36px;
+        font-weight: 900;
+    }
+
     .textTahun{
         display: none;
     }
@@ -602,7 +610,6 @@
         font-size: 24px;
         margin-top: 180px;
         margin-left: 10px;
-        border: 1px solid white;
         width: 100%;
     }
 
