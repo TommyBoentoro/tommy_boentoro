@@ -93,6 +93,10 @@
     margin-top: 77px;
 }
 
+.textlinkjati{
+    font-weight: 700;
+}
+
 .textHeaderProject{
     font-family: 'Playfair Display', serif;
     font-size: 36px;
@@ -231,14 +235,26 @@
 
 @media (max-width:576px){
 
+    
+    .textlinkjati{
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .textlink{
+        color: var(--black);
+        font-weight: 700;
+        font-size: 10px;
+    }
+
     .imageJumbotron{
         width: 100%;
-        height: 600px;
+        height: 300px;
         object-fit: cover;
     }
 
     .image-outer{
-        height: 600px;
+        height: 300px;
         width: 100%;
     }
     
@@ -246,7 +262,7 @@
         content: "";
         background-color: var(--black);
         position: absolute;
-        height: 600px;
+        height: 300px;
         width: 100%;
         top: 0;
         right: 0;
@@ -258,23 +274,31 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 600px;
+        height: 300px;
         background-color: black;
         opacity: 0.3;
     }
 
     .bgJati{
         width: 100%;
-        height: 600px;
+        height: 300px;
         background-color: var(--black);
         color: var(--white);
     }
 
     .textHeaderProject{
         font-family: 'Playfair Display', serif;
-        font-size: 24px;
+        font-size: 16px;
         color: var(--black);
         font-weight: 900;
+    }
+
+    .textBodyProject{
+        margin-top: 10px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--grey);
     }
 
     /* .fontHeader1{
@@ -334,24 +358,34 @@
         z-index: 2;
         margin-top: 45vh;
         margin-left: 13vh;
-    } 
+    }
+    
+    .body1{
+        margin-top: 40px;
+    }
 
     .body2{
-        margin-top: 53px;
+        margin-top: 20px;
     }
     
     .body3{
         margin-top: 50px;
     }
 
+    .bodyImage1{
+        margin-top: 15px;
+        width: 100%;
+        height: 200px;
+    }
+
     .bodyImage2{
-        margin-top: 275px;
+        margin-top: 135px;
         width: 100%;
         height: 350px;
     }
 
     .bodyImage3{
-        margin-top: 53px;
+        margin-top: -20px;
         width: 100%;
         height: 300px;
     }
@@ -365,7 +399,7 @@
     .bgJatiBody{
         width: 100%;
         background-color: var(--white);
-        height: 2100px
+        height: 1400px
     }
 }
 

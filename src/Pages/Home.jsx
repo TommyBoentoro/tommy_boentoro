@@ -33,7 +33,7 @@ function Home(){
         .from(firstLine, {duration:0.5, opacity:0, x:400, ease:Power3.easeOut}, .2)
         .from(secondLine, {duration:0.5, opacity:0, x:-400, ease:Power3.easeOut}, .4)
         .from(thirdLine, {duration:1.2, y:40, ease:Power3.easeOut},1.4)
-        .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.4)
+        .from(fourthLine, {duration:1.2, y:100, ease:Power3.easeOut},1.2)
         .from(fifthLine, {duration:1.2, y:45, ease:Power3.easeOut},2.1)
         .from(sixthLine, {duration:1.2, y:80, ease:Power3.easeOut}, 2.1)
         .from(seventhLine, {duration:1, y:250, ease:Power3.easeOut}, 1.9)
