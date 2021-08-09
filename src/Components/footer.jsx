@@ -4,7 +4,7 @@ import "./../Components/footer.css"
 function Footer (){
     return(
         <div className="bgFooter d-flex align-items-center">
-            <div className="container-fluid d-flex  px-5" style={{color:"white"}}>
+            <div className="container-fluid d-flex px-sm-5" style={{color:"white"}}>
                 <div className="col px-0 fontPlay displayFooter">
                     <div className="footer1" >
                         Tommyboentoro@gmail.com 

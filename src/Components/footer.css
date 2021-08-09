@@ -38,21 +38,24 @@
 }
 
 @media (max-width:576px){
-    .footer1{
-        font-size: 18px;
-        color: var(--green);
-        font-weight: 700;
-    }
-}
 
-@media (max-width:459px){
-     .displayFooter{
-         display: none;
-     }
-
-     .bgFooter{
+    .bgFooter{
         height: 150px;
         width: 100%;
         background-color: var(--black);
     }
+
+    .footer1{
+        font-size: 14px;
+        color: var(--green);
+        font-weight: 700;
+    }
+
+    .footerBody{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:459px){
+    
 }
