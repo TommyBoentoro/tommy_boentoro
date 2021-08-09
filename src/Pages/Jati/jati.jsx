@@ -117,7 +117,7 @@ function Jati(){
                                 <div className="textHeaderProject">
                                     Jati
                                 </div>
-                                <div className="mx-3 textlink">
+                                <div className="mx-3" style={{fontWeight:"700"}}>
                                      Contact me for the link!
                                 </div>
                             </div>

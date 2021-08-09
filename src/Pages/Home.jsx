@@ -6,7 +6,7 @@ import gsap,{Power3} from "gsap"
 // Images
 import JatiHome from "./../assets/Jati/testing.jpg"
 import JoshuaHome from "./../assets/Joshua/JoshuaHome.JPG"
-import Register from "./../assets/todo/register.png"
+
 
 // Footer
 import Footer from "../Components/footer"
@@ -179,9 +179,12 @@ function Home(){
                                 <div className="textCardBody fontKanit col-10 px-0">
                                     Profesional website portofolio that engaged in interior design and architecture
                                 </div>
-                                <div className="d-flex justify-content-end">
+                                <div className="d-flex justify-content-between">
                                     <div className="textViewProject fontKanit">
                                         <a className="textViewProject fontKanit" href="/joshua">View Project.</a>
+                                    </div>
+                                    <div className="textViewProject fontKanit">
+                                        <a className="textViewProject fontKanit" href="https://joshuaaditama.com/">View Site.</a>
                                     </div>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@ function Footer (){
                     <div className="fontKanit">
                         <div className="footerBody col-md-6 col-12 px-0">
                             23 years old from Indonesia who like to turn your ideas into an outstanding 
-                            website.I am a full-stack developer who using MERN Stack and find a oportunity to collaborate
+                            website.I am a full-stack developer who using MERN and find an oportunity to collaborate
                             with you!.
                         </div>
                     </div>
@@ -26,7 +26,7 @@ function Footer (){
                             <a className="contactMe" href="https://www.instagram.com/tommyboentoro/">Instagram</a>
                         </div>
                         <div className="footerBody fontKanit">
-                            Twitter
+                            <a className="contactMe" href="mailto:tommyboentoro@gmail.com">Email</a>
                         </div>
                     </div>
                 </div>

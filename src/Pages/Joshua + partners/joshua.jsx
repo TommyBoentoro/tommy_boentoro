@@ -118,8 +118,8 @@ function Joshua(){
                                 <div className="textHeaderProject">
                                     Joshua Aditama + partners
                                 </div>
-                                <div className="mx-3 textlink">
-                                     Contact me for the link!
+                                <div className="mx-3">
+                                    <a href="https://joshuaaditama.com/" className="textlink">  View Site. </a>
                                 </div>
                             </div>
                             <div className="textBodyProject col-md-7 col-12 px-0">
