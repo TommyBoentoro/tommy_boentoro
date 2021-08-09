@@ -204,17 +204,23 @@
     }
     
     .body3{
-        margin-top: 50px;
+        margin-top: 75px;
+    }
+
+    .bodyImage1{
+        margin-top: 30px;
+        width: 100%;
+        
     }
 
     .bodyImage2{
-        margin-top: 275px;
+        margin-top: 150px;
         width: 100%;
         height: 350px;
     }
 
     .bodyImage3{
-        margin-top: 53px;
+        margin-top: 20px;
         width: 100%;
         height: 300px;
     }
@@ -228,7 +234,33 @@
     .bgJatiBody{
         width: 100%;
         background-color: var(--white);
-        height: 2000px
+        height: 1700px
+    }
+
+    .textHeaderProject{
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: var(--black);
+        font-weight: 900;
+    }
+
+    .textBodyProject{
+        margin-top: 10px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--grey);
+    }
+
+    .textlinkjati{
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .textlink{
+        color: var(--black);
+        font-weight: 700;
+        font-size: 12px;
     }
 }
 

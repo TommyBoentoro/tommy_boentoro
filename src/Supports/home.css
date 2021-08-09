@@ -370,7 +370,7 @@
 
     .bgBody{
         background-color: var(--white);
-        height: 1300px;
+        height: 1150px;
         width: 100%;
     }
 
@@ -390,6 +390,7 @@
         transition-delay: .2s;
         transition-duration: .5s;
         cursor: pointer;
+        margin-top: -150px;
     }
 
 }
