@@ -461,7 +461,7 @@
     }
 
     .sectionWelcome{
-        margin-top: 5vh;
+        margin-top: 50px;
     }
 
     .welcome{
@@ -488,7 +488,7 @@
         font-size: 14px;
         font-weight: 400;
         color: var(--white);
-        margin-top: 10vh;
+        margin-top: 100px;
     }
     
     .garisPertama{
@@ -531,6 +531,7 @@
         transition-delay: .2s;
         transition-duration: .5s;
         cursor: pointer;
+        margin-top: -20px;
     }
 
     .cardImg-1{
@@ -544,7 +545,7 @@
 
     .bgBody{
         background-color: var(--white);
-        height: 850px;
+        height: 800px;
         width: 100%;
     }
 
